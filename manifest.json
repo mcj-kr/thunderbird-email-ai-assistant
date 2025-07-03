@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Spam Filter",
+  "version": "3.0",
+  "description": "Adds a header to incoming emails.",
+  "permissions": [
+    "messagesRead",
+    "messagesModify",
+    "messagesUpdate",
+    "accountsRead",
+    "storage",
+    "menus",
+    "notifications",
+    "messagesTags",
+    "messagesTagsList",
+    "http://localhost:11434/"
+  ],
+  "background": {
+    "page": "dist/background.html"
+  },
+  "browser_specific_settings": {
+    "thunderbird": {
+      "id": "mail-assist@entestat.com"
+    }
+  }
+}
