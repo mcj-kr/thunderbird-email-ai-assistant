@@ -6,6 +6,8 @@ package-lock.json
 # Build artifacts
 dist/
 web-ext-artifacts/
+background-bundle.js
+options-bundle.js
 
 # Local configuration
 .idea/

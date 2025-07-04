@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Spam Filter",
-  "version": "3.0",
-  "description": "Adds a header to incoming emails.",
+  "name": "Email Assistant",
+  "version": "1.0",
+  "description": "Automatically tags messages base on AI rules",
   "permissions": [
     "messagesRead",
     "messagesModify",
@@ -12,15 +12,26 @@
     "menus",
     "notifications",
     "messagesTags",
-    "messagesTagsList",
-    "http://localhost:11434/"
+    "messagesTagsList"
+  ],
+  "optional_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "https://api.openai.com/",
+    "https://generativelanguage.googleapis.com/",
+    "https://api.anthropic.com/",
+    "https://api.mistral.ai/"
   ],
   "background": {
-    "page": "dist/background.html"
+    "page": "background.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
   },
   "browser_specific_settings": {
     "thunderbird": {
-      "id": "mail-assist@entestat.com"
+      "id": "mail-assistant-0.1@entestat.com"
     }
   }
 }
