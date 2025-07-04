@@ -21,11 +21,11 @@
           <label for="provider">LLM Provider:</label>
           <select id="provider" name="provider">
             <option value="ollama">Ollama</option>
-            <option value="openai">OpenAI</option>
-            <option value="gemini">Google Gemini</option>
-            <option value="claude">Anthropic Claude</option>
             <option value="mistral">Mistral</option>
+            <option value="gemini">Google Gemini</option>
             <option value="deepseek">DeepSeek</option>
+            <option value="openai">OpenAI</option>
+            <option value="claude">Anthropic Claude</option>
           </select>
         </div>
         <div id="ollama-settings" class="provider-settings">
@@ -41,7 +41,9 @@
           <hr>
           <div class="help-section">
             <h2>Ollama Setup</h2>
-            <p>For the extension to connect to a local Ollama server, you must configure Ollama to accept requests from Thunderbird. Start your server with the <code>OLLAMA_ORIGINS</code> environment variable set appropriately:</p>
+            <p>Ollama is a powerful tool that allows you to run open-source large language models locally. You must first download and install the <a href="https://ollama.com/" target="_blank">Ollama software</a> and host your own instance.</p>
+            <p><b>Privacy Benefit:</b> By using Ollama, all email analysis is performed on your own computer. No data from your emails is ever sent to a third-party cloud service, ensuring maximum privacy.</p>
+            <p>For the extension to connect, you must also configure Ollama to accept requests from Thunderbird. Start your server with the <code>OLLAMA_ORIGINS</code> environment variable set appropriately:</p>
             <pre><code>OLLAMA_ORIGINS='*' ollama serve</code></pre>
           </div>
         </div>
@@ -52,6 +54,10 @@
             <label for="mistral-api-key">Mistral API Key:</label>
             <input type="password" id="mistral-api-key" name="mistral-api-key">
           </div>
+          <div class="help-section">
+            <p><b>Privacy Notice:</b> By using Mistral, the content of your emails will be sent to and processed by a third-party service (<a href="https://mistral.ai/" target="_blank">Mistral AI</a>). This includes potentially sensitive data</p>
+            <p><b>GDPR Compliance:</b> Mistral is a company based in the EU, which may make it a suitable choice for users concerned with GDPR compliance.</p>
+          </div>
         </div>
 
         <!-- OpenAI Settings -->
@@ -59,6 +65,9 @@
           <div class="form-group">
             <label for="openai-api-key">OpenAI API Key:</label>
             <input type="password" id="openai-api-key" name="openai-api-key">
+          </div>
+          <div class="help-section">
+            <p><b>Privacy Notice:</b> By using OpenAI, the content of your emails will be sent to and processed by a third-party service (<a href="https://openai.com" target="_blank">OpenAI</a>). This includes potentially sensitive data.</p>
           </div>
         </div>
 
@@ -68,6 +77,9 @@
             <label for="gemini-api-key">Google Gemini API Key:</label>
             <input type="password" id="gemini-api-key" name="gemini-api-key">
           </div>
+          <div class="help-section">
+            <p><b>Privacy Notice:</b> By using Google Gemini, the content of your emails will be sent to and processed by a third-party service (<a href="https://deepmind.google/technologies/gemini/" target="_blank">Google</a>). This includes potentially sensitive data.</p>
+          </div>
         </div>
 
         <!-- Claude Settings -->
@@ -76,15 +88,21 @@
             <label for="claude-api-key">Anthropic Claude API Key:</label>
             <input type="password" id="claude-api-key" name="claude-api-key">
           </div>
+          <div class="help-section">
+            <p><b>Privacy Notice:</b> By using Anthropic Claude, the content of your emails will be sent to and processed by a third-party service (<a href="https://www.anthropic.com/" target="_blank">Anthropic</a>). This includes potentially sensitive data.</p>
+          </div>
         </div>
 
 
-        
+
         <!-- DeepSeek Settings -->
         <div id="deepseek-settings" class="provider-settings" style="display: none;">
           <div class="form-group">
             <label for="deepseek-api-key">DeepSeek API Key:</label>
             <input type="password" id="deepseek-api-key" name="deepseek-api-key">
+          </div>
+          <div class="help-section">
+            <p><b>Privacy Notice:</b> By using DeepSeek, the content of your emails will be sent to and processed by a third-party service (<a href="https://www.deepseek.com/" target="_blank">DeepSeek</a>). This includes potentially sensitive data.</p>
           </div>
         </div>
 
