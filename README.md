@@ -46,24 +46,3 @@ This Thunderbird MailExtension provides a powerful and flexible framework for AI
 3.  Click the gear icon, select `Debug Add-ons`, and then click `Load Temporary Add-on...`.
 4.  Select the generated `.zip` file from the `web-ext-artifacts/` directory.
 
-### Permanent Installation
-
-To install the add-on permanently, it must be signed by Mozilla.
-
-1.  **Get AMO Credentials**:
-    - Go to the [AMO Developer Hub](https://addons.mozilla.org/en-US/developers/) and log in.
-    - Navigate to the [API Keys page](https://addons.mozilla.org/en-US/developers/addon/api/key/) to generate your JWT issuer and secret.
-
-2.  **Sign the Add-on**:
-    - Open the `sign.bash` script in the project root.
-    - Replace the placeholder values for `API_KEY` and `API_SECRET` with your actual credentials.
-    - Run the script:
-      ```bash
-      ./sign.bash
-      ```
-    - This will create a signed `.xpi` file in the `web-ext-artifacts/` directory.
-
-3.  **Install the Signed File**:
-    - In Thunderbird, go to `Tools > Add-ons and Themes`.
-    - Click the gear icon and select `Install Add-on From File...`.
-    - Select the newly created `.xpi` file.
