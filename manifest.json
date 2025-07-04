@@ -32,6 +32,9 @@
   "browser_specific_settings": {
     "thunderbird": {
       "id": "mail-assistant-0.1@entestat.com"
+    },
+    "gecko": {
+      "id": "mail-assistant-0.1@entestat.com"
     }
   }
 }
