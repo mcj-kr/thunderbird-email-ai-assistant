@@ -1,6 +1,8 @@
 # Thunderbird Email AI Assistant
 > AI-powered, multi-provider mail tagging and classification engine for Thunderbird.
 
+Plugin page: https://addons.thunderbird.net/eN-US/thunderbird/addon/email-assistant/
+
 This Thunderbird MailExtension provides a powerful and flexible framework for AI-powered email analysis. It automatically processes incoming emails, sends them to a language model of your choice for analysis, and then applies tags based on the model's response. This allows for sophisticated, automated email classification and sorting.
 
 ## Key Features
@@ -72,6 +74,9 @@ periodically, as tagging is executed after initial filtering.
     ```
 
 ## Installation                                                                                                                                                                                     
+### Adding plugin
+Install plugin from: https://addons.thunderbird.net/eN-US/thunderbird/addon/email-assistant/
+
 ### Temporary Installation (for Development)                                                                                                                                                        
 
 1.  Build the extension using the instructions above.                                                                                                                                           

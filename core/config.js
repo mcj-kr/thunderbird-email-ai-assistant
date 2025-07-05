@@ -4,7 +4,8 @@ export const TAG_NAME_PREFIX = "A:";
 export const HARDCODED_TAGS = {
   is_scam: { key: "is_scam", name: "Scam Alert", color: "#FF5722" },
   spf_fail: { key: "spf_fail", name: "SPF Fail", color: "#E91E63" },
-  dkim_fail: { key: "dkim_fail", name: "DKIM Fail", color: "#E91E63" }
+  dkim_fail: { key: "dkim_fail", name: "DKIM Fail", color: "#E91E63" },
+  tagged: { key: "tagged", name: "Tagged", color: "#4f4f4f" }
 };
 
 export const DEFAULT_CUSTOM_TAGS = [

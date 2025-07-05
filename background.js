@@ -57,7 +57,7 @@ messenger.messages.onNewMailReceived.addListener(async (folder, messages) => {
           tagSet.add(TAG_KEY_PREFIX + tag.key);
         }
       }
-
+      tagSet.add(TAG_KEY_PREFIX + HARDCODED_TAGS.tagged);
       console.log("Spam-Filter Extension: Analysis complete, tagging...", tagSet);
 
       await messenger.messages.update(message.id, { tags: Array.from(tagSet) });
